@@ -2,7 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Detalle del Libro</h2>
 
-Código:
 <asp:Label ID="lblCodigo" runat="server"></asp:Label>
 <br /><br />
 

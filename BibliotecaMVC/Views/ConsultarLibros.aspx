@@ -39,6 +39,7 @@ OnRowCommand="gvLibros_RowCommand">
                     OnClientClick="return confirm('¿Desea eliminar este libro?');" />
             </ItemTemplate>
         </asp:TemplateField>
+     
 
     </Columns>
 

@@ -30,7 +30,7 @@ namespace BibliotecaMVC.Views
 
                 if (e.CommandName == "Detalle")
                 {
-                    Response.Redirect("DetalleLibro.aspx?codigo=" + codigo);
+                    Response.Redirect("~/Views/DetalleLibro.aspx?codigo=" + codigo);
                 }
 
                 if (e.CommandName == "Eliminar")
