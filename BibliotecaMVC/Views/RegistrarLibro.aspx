@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RegistrarLibro.aspx.cs" Inherits="BibliotecaMVC.Views.RegistrarLibro" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-</asp:Content>
+
 <h2>Registrar Libro</h2>
 
 Código:
@@ -11,9 +12,11 @@ Título:
 <asp:TextBox ID="txtTitulo" runat="server"></asp:TextBox>
 <br /><br />
 
+Autor:
 <asp:TextBox ID="txtAutor" runat="server"></asp:TextBox>
 <br /><br />
 
+Fecha:
 <asp:TextBox ID="txtFecha" runat="server"></asp:TextBox>
 <br /><br />
 
@@ -21,3 +24,5 @@ Título:
 <br /><br />
 
 <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+
+</asp:Content>

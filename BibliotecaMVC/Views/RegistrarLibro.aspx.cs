@@ -7,19 +7,23 @@ using System.Web.UI.WebControls;
 
 namespace BibliotecaMVC.Views
 {
-    protected void btnGuardar_Click(object sender, EventArgs e)
+    public partial class RegistrarLibro : Page
+
     {
-        LibroController controller = new LibroController();
+        protected void btnGuardar_Click(object sender, EventArgs e)
+        {
+            LibroController controller = new LibroController();
 
-        Libro libro = new Libro();
+            Libro libro = new Libro();
 
-        libro.Codigo = txtCodigo.Text;
-        libro.Titulo = txtTitulo.Text;
-        libro.Autor = txtAutor.Text;
-        libro.FechaPublicacion = Convert.ToDateTime(txtFecha.Text);
+            libro.Codigo = txtCodigo.Text;
+            libro.Titulo = txtTitulo.Text;
+            libro.Autor = txtAutor.Text;
+            libro.FechaPublicacion = Convert.ToDateTime(txtFecha.Text);
 
-        controller.Registrar(libro);
+            controller.Registrar(libro);
 
-        lblMensaje.Text = "Libro registrado correctamente";
+            lblMensaje.Text = "Libro registrado correctamente";
+        }
     }
 }
