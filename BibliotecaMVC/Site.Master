@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title>Biblioteca Virtual</title>
-    <link href="Estilos/style.css" rel="stylesheet" />
+    <link href="~/Estilos/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -16,19 +16,21 @@
 <h1>Biblioteca Virtual</h1>
 </header>
 
-<nav>
-<a href="RegistrarLibro.aspx">Registrar Libro</a>
-<a href="ConsultarLibros.aspx">Consultar Libros</a>
-</nav>
+<asp:HyperLink NavigateUrl="~/Views/RegistrarLibro.aspx" runat="server">
+    Registrar Libro
+</asp:HyperLink>
+
+<asp:HyperLink NavigateUrl="~/Views/ConsultarLibros.aspx" runat="server">
+    Consultar Libros
+</asp:HyperLink>
 
 <asp:ContentPlaceHolder ID="MainContent" runat="server">
 </asp:ContentPlaceHolder>
 
-
 <footer>
-<p>Nombre del estudiante - Fecha</p>
+<p>Arlette Gonzalez - 15 de marzo del 2026</p>
 </footer>
-  <script src="JS/script.js"></script>
+  <script src="~/JS/script.js"></script>
 </form>
 
 </body>
